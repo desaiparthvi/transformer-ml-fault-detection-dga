@@ -8,7 +8,7 @@ from sklearn.svm import SVC
 from sklearn.metrics import confusion_matrix
 from sklearn.metrics import classification_report, accuracy_score
 
-data = pd.read_excel(r"C:\Users\desai\Desktop\PROJECT\Filtered training data (1).xlsx")
+data = pd.read_excel("data/dga_dataset.xlsx")
 print(data.isnull().sum())
 # Fill missing numeric values (gas columns)
 data[['H2', 'CH4', 'C2H6', 'C2H4', 'C2H2']] = data[['H2', 'CH4', 'C2H6', 'C2H4', 'C2H2']].fillna(data[['H2', 'CH4', 'C2H6', 'C2H4', 'C2H2']].mean())
@@ -57,3 +57,4 @@ print(confusion_matrix)
 print("Accuracy:", accuracy_score(y_test, y_pred_clf))
 print("Classification Report:")
 print(classification_report(y_test, y_pred_clf))
+
