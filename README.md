@@ -14,3 +14,11 @@ Python, NumPy, Pandas, Scikit-learn, Matplotlib
 
 ## Status
 Model developed. Further improvements and research paper in progress.
+
+## Model Used
+The project uses supervised classification techniques to identify transformer fault types based on DGA gas concentration features.
+
+## Future Work
+- Model optimization
+- Cross-validation improvement
+- Research paper submission
